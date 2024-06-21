@@ -1,0 +1,166 @@
+*{margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+      box-sizing: border-box;
+      text-transform: capitalize;
+      font-weight: normal;
+  }
+
+    .heading {
+      color: #444;
+      font-size: 35px;
+      text-align: center;
+      padding: 10px;
+    }
+
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: url(1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+      }
+
+
+     .content2{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 15px;
+        align-items: flex-start;
+        padding: 5px 5%;
+      }
+      
+      .content2 .main-video{
+        background: transparent;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      
+      .content2 .main-video video{
+        width: 100%;
+        border-radius: 5px;
+      }
+      
+      .content2 .main-video .title{
+        color:#333;
+        font-size: 23px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+
+      .content2 .video-list{
+        background: transparent;
+        border-radius: 5px;
+        height: 520px;
+        overflow-y: scroll;
+      }
+      
+      .content2 .video-list::-webkit-scrollbar{
+        width: 7px;
+      }
+        
+      .content2 .video-list::-webkit-scrollbar-track{
+        background:#ccc;
+        border-radius: 50px;
+      }
+      
+      .content2 .video-list::-webkit-scrollbar-thumb{
+        background:rgb(17, 17, 17);
+        border-radius: 50px;
+      }
+        
+      .content2 .video-list .vid video{
+        width: 100px;
+        border-radius: 5px;
+      }
+        
+      .content2 .video-list .vid{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid rgba(0,0,0,.1);
+        cursor: pointer;
+      }
+      
+      .content2 .video-list .vid:hover{
+        background: #eee;
+      }
+      
+      .content2 .video-list .vid.active{
+        background: #2980b9;
+      }
+      
+      .content2 .video-list .vid.active .title{
+        color: #fff;
+      }
+      
+      .content2 .video-list .vid .title{
+        color: #333;
+        font-size: 17px;
+      }
+
+
+      .btn {
+        cursor: pointer;
+        color: #cc0052;
+        font-size: 20px;
+        letter-spacing: 2px;
+        padding: 5px 10px;
+        border: 2px solid #003333;
+        background: transparent;
+        text-decoration: none;
+        text-align: center;
+        margin: 10px 5px;
+        border-radius: 15px;
+      }
+      
+      .btn:hover{
+        color: #000;
+        background-color:#fff;
+      }
+      
+      .btn a: visited{
+        background-color: #fff;
+        color: #cc0052;
+      }
+      
+      .btn a: hover{
+        color: #000;
+      }
+      
+      .btn a: link{
+        text-decoration:none;
+      }
+      
+
+      
+
+        
+      @media (max-width:991px){
+      
+        .content2{
+        grid-template-columns: 1.5fr 1fr;
+        padding: 10px;}
+      }
+      
+      @media (max-width:768px){
+      
+        .content2{
+        grid-template-columns: 1fr;
+        }
+      }
+      
+      
+
+
+
+      
+
+
+      
+   

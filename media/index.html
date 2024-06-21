@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7615245457727481"
+     crossorigin="anonymous"></script>
+
+    <title>artSA</title>
+
+<link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+   
+    <div class="contentB">
+        <button class="btn"><a href="C:\Users\8minutes\Desktop\mysites\africanstylize\index.html"><h4>Home</h4></a></button>
+        
+
+    
+
+<h3 class="heading">8MinutesVideoGallery</h3>
+
+
+
+    <div class="content2">
+
+        <div class="main-video">
+            <div class="video">
+                <video src="List of Videos/8minutes/addcgblend.mp4" controls muted autoplay></video>
+                <h3 class="title">addcgblend</h3>
+            </div>
+            </div>
+
+            <div class="video-list">
+                <div class="vid active">
+                <video src="List of Videos\musicvideos\LastDay.mp4" muted></video>
+                <h3 class="title">last day</h3>
+                </div>
+        
+                <div class="vid">
+                <video src="List of Videos\8minutes\addcgblend.mp4" muted></video>
+                <h3 class="title">addcgblend</h3>
+                </div>
+    
+                <div class="vid">
+                <video src="List of Videos\8minutes\blenderanims.mp4" muted></video>
+                <h3 class="title">blenderanims</h3>
+                 </div>
+            
+                <div class="vid">
+                <video src="List of Videos\8minutes\deathawakens.mp4" muted></video>
+                <h3 class="title">deathawakens</h3>
+                </div>
+                
+                <div class="vid">
+                <video src="List of Videos\8minutes\easyblend.mp4" muted></video>
+                <h3 class="title">easyblend</h3>
+                </div>
+                   
+                <div class="vid">
+                <video src="List of Videos\musicvideos\hateby8.mp4" muted></video>
+                <h3 class="title">peoplehates</h3>
+                </div>
+        
+                <div class="vid">
+                <video src="List of Videos\8minutes\keybluescreens.mp4" muted></video>
+                <h3 class="title">keying with blender</h3>
+                </div>
+    
+                <div class="vid">
+                <video src="List of Videos\8minutes\clothanimblend.mp4" muted></video>
+                <h3 class="title">make cloth easy in blender</h3>
+                </div>
+        
+                <div class="vid">
+                <video src="List of Videos\8minutes\banners.mp4" muted></video>
+                <h3 class="title">banner making in blender</h3>
+                </div>
+
+            </div>
+
+    </div>
+
+<script>
+
+    let listVideo = document.querySelectorAll('.video-list .vid');
+    let mainVideo = document.querySelector('.main-video video');
+    let title = document.querySelector('.main-video .title');
+    
+    listVideo.forEach(video =>{
+      video.onclick = () =>{
+         listVideo.forEach(vid => vid.classList.remove('active'));
+         video.classList.add('active');
+         if(video.classList.contains('active')){
+         let src = video.children[0].getAttribute('src');
+         mainVideo.src = src;
+         let text = video.children[1].innerHTML;
+         title.innerHTML = text;
+    };
+    };
+    });
+
+</script>
+
+
+
+<div class="content3">
+
+    <h3>&copy;2024 8MinutesWorldRecords</h3>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
